@@ -18,11 +18,11 @@ if (array[i] > n)
 n = array[i];
 }
 count_array = calloc((n + 1), sizeof(int));
-for(i = 0; i < size; i++)
+for (i = 0; i < size; i++)
 {
 count_array[array[i]]++;
 }
-for(j = 1; j < n; j++)
+for (j = 1; j < n; j++)
 {
 count_array[j + 1] += count_array[j];
 }
