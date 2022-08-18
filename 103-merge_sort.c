@@ -49,6 +49,7 @@ return;
 temp = malloc(sizeof(*temp) * size);
 if (!temp)
 return;
+
 _merge_sort(array, temp, size);
 free(temp);
 }
